@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond $1 !^(index?\.php|test?\.php|info?\.php|BingSiteAuth?\.xml|content|test2|pma|css|external|00_mot|00_specialt|bigdump|images|js|googlea508329eb5a9f108\.html|googlee33879eaef3291fe\.html|robots\.txt|sitemap\.xml)
+#RewriteRule ^(.*)$ /index.php?/$1 [L]
+
+
+RewriteRule ^(.*)$ /index.php?/$1 [L]
+
